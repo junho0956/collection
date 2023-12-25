@@ -8,6 +8,11 @@ const Head = () => {
     <Container>
       <ul>
         <li>
+          <a href="https://portfolio-rn8xv827s-junho0956.vercel.app" target="_blank">
+            junho0956
+          </a>
+        </li>
+        <li>
           <a href="https://github.com/junho0956" target="_blank">
             <img src={images.platform.github} alt="" />
           </a>
