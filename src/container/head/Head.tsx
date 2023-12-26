@@ -8,7 +8,7 @@ const Head = () => {
     <Container>
       <ul>
         <li>
-          <a href="https://portfolio-rn8xv827s-junho0956.vercel.app" target="_blank">
+          <a href="https://portfolio-gamma-two-50.vercel.app" target="_blank">
             junho0956
           </a>
         </li>
