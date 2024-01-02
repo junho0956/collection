@@ -15,6 +15,7 @@ import HorizontalNavigation from "../navigation/HorizontalNavigation";
 import VerticalNavigation from "../navigation/VerticalNavigation";
 import CardPerspective from "../css/CardPerspective";
 import BasicSlide from "../slide/BasicSlide";
+import OptDocker from "../docker/opt";
 
 type Props = {
   navOpen: boolean;
@@ -36,7 +37,8 @@ const Main = (props:Props) => {
         <Route path="/client-rect" element={<ClientRect />} />
         <Route path="/css/perspective" element={<CardPerspective />} />
         <Route path="/slide/basic" element={<BasicSlide />} />
-        <Route path='/react-query' element={<Query />} />
+        <Route path="/react-query" element={<Query />} />
+        <Route path="/docker/opt" element={<OptDocker />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Container>

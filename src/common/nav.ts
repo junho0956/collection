@@ -4,6 +4,16 @@ export const navRoutes:NavRouteType[] = [
     title: 'drag & drop'
   },
   {
+    path: 'docker',
+    title: 'docker',
+    children: [
+      {
+        path: 'opt',
+        title: 'optimization(Next.js)'
+      }
+    ]
+  },
+  {
     path: 'chart',
     title: 'chart',
     children: [
