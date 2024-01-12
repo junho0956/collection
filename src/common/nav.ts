@@ -1,5 +1,9 @@
 export const navRoutes:NavRouteType[] = [
   {
+    path: 'nextjs',
+    title: 'next.js 14'
+  },
+  {
     path: 'board',
     title: 'drag & drop'
   },

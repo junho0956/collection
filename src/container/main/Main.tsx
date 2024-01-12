@@ -15,6 +15,7 @@ import HorizontalNavigation from "../navigation/HorizontalNavigation";
 import VerticalNavigation from "../navigation/VerticalNavigation";
 import CardPerspective from "../css/CardPerspective";
 import BasicSlide from "../slide/BasicSlide";
+import NextJS from "../nextjs/nextjs";
 
 type Props = {
   navOpen: boolean;
@@ -26,6 +27,7 @@ const Main = (props:Props) => {
       <Head />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/nextjs" element={<NextJS />} />
         <Route path="/board" element={<Board />}/>
         <Route path="/chart/radar" element={<RadarChart />} />
         <Route path="/chart/custom-radar" element={<ChartCustom />}/>
