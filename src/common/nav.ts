@@ -66,4 +66,14 @@ export const navRoutes:NavRouteType[] = [
       }
     ]
   },
+  {
+    path: 'http',
+    title: 'http',
+    children: [
+      {
+        path: 'cache',
+        title: 'cache'
+      }
+    ]
+  }
 ]

@@ -43,3 +43,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.br {
+  margin-bottom: 0.5rem;
+}
+.strong {
+  font-weight: 700;
+}
+.indent {
+  padding-left: 1rem;
+}
+.indent:not(:first-child)>:last-child {
+  margin-bottom: 0.5rem;
+}

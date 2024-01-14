@@ -16,6 +16,7 @@ import VerticalNavigation from "../navigation/VerticalNavigation";
 import CardPerspective from "../css/CardPerspective";
 import BasicSlide from "../slide/BasicSlide";
 import NextJS from "../nextjs/nextjs";
+import HTTPCache from "../http/cache";
 
 type Props = {
   navOpen: boolean;
@@ -39,6 +40,7 @@ const Main = (props:Props) => {
         <Route path="/css/perspective" element={<CardPerspective />} />
         <Route path="/slide/basic" element={<BasicSlide />} />
         <Route path='/react-query' element={<Query />} />
+        <Route path='/http/cache' element={<HTTPCache />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Container>

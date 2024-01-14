@@ -1,5 +1,5 @@
 import {navRoutes} from "../../common/nav";
-import React from "react";
+import React, {useMemo} from "react";
 import styled from "styled-components";
 import {screens} from "../../common/media";
 import {SystemColor} from "../../common/colors";
@@ -18,9 +18,17 @@ const Route = ({title}:{title:string}) => {
 }
 
 export default function NavRoutes() {
+  const sortedNavRoutes = useMemo(() => {
+    return navRoutes
+      .sort((a,b) => {
+        if (a.title < b.title) return -1;
+        else if (a.title == b.title) return 0;
+        else return 1;
+      })
+  }, []);
   return (
     <Wrapper className="navRoutes">
-      {navRoutes.map((route) => (
+      {sortedNavRoutes.map((route) => (
         <li key={route.path}>
           {!route.children ? (
             <LinkRoute url={`/${route.path}`} title={route.title} />
