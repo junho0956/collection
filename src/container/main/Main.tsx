@@ -17,6 +17,7 @@ import CardPerspective from "../css/CardPerspective";
 import BasicSlide from "../slide/BasicSlide";
 import NextJS from "../nextjs/nextjs";
 import HTTPCache from "../http/cache";
+import Throttle from "../utils/throttle";
 
 type Props = {
   navOpen: boolean;
@@ -30,17 +31,24 @@ const Main = (props:Props) => {
         <Route path="/" element={<Home />} />
         <Route path="/nextjs" element={<NextJS />} />
         <Route path="/board" element={<Board />}/>
-        <Route path="/chart/radar" element={<RadarChart />} />
-        <Route path="/chart/custom-radar" element={<ChartCustom />}/>
-        <Route path="/chart/line" element={<LineChart />}/>
-        <Route path="/geolocation" element={<Geolocation />}/>
-        <Route path="/navigation/horizontal/basic" element={<HorizontalNavigation />} />
-        <Route path="/navigation/vertical/basic" element={<VerticalNavigation />} />
         <Route path="/client-rect" element={<ClientRect />} />
         <Route path="/css/perspective" element={<CardPerspective />} />
         <Route path="/slide/basic" element={<BasicSlide />} />
         <Route path='/react-query' element={<Query />} />
         <Route path='/http/cache' element={<HTTPCache />} />
+
+        <Route path="/chart/radar" element={<RadarChart />} />
+        <Route path="/chart/custom-radar" element={<ChartCustom />}/>
+        <Route path="/chart/line" element={<LineChart />}/>
+
+        <Route path="/geolocation" element={<Geolocation />}/>
+
+        <Route path="/navigation/horizontal/basic" element={<HorizontalNavigation />} />
+        <Route path="/navigation/vertical/basic" element={<VerticalNavigation />} />
+
+        <Route path='/utils/throttle' element={<Throttle />} />
+
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Container>

@@ -1,5 +1,22 @@
 export const navRoutes:NavRouteType[] = [
   {
+    path: 'utils',
+    title: 'utils',
+    children: [
+      {
+        path: 'throttle',
+        title: 'throttle'
+      },
+    ]
+  },
+  {
+    path: 'hooks',
+    title: 'hooks',
+    children: [
+
+    ]
+  },
+  {
     path: 'nextjs',
     title: 'next.js 14'
   },
@@ -75,5 +92,5 @@ export const navRoutes:NavRouteType[] = [
         title: 'cache'
       }
     ]
-  }
+  },
 ]
