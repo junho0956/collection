@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useMemo, useState, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import useBasicSlider from "../../hooks/slider/useBasicSlider";
 

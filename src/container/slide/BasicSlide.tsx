@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Slider from "./Slider";
 import {useState} from "react";
 import {basicSliderData} from "../../common/db";
+import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/prism";
 
 export default function BasicSlide() {
 
@@ -14,25 +15,21 @@ export default function BasicSlide() {
 
   return (
     <Wrapper>
-      <p>
-        Used: javascript
-      </p>
-
       <div className="slider-options">
         <button onClick={() => setOption(state => ({...state, arrow: !state.arrow}))}>
-          arrow {option.arrow ? "off" : "on"}
+          arrow {option.arrow ? "on" : "off"}
         </button>
         <button onClick={() => setOption(state => ({...state, pointer: !state.pointer}))}>
-          pointer {option.pointer ? "off" : "on"}
+          pointer {option.pointer ? "on" : "off"}
         </button>
         <button onClick={() => setOption(state => ({...state, auto: !state.auto}))}>
-          auto {option.auto ? "off" : "on"}
+          auto {option.auto ? "on" : "off"}
         </button>
         <button onClick={() => setOption(state => ({...state, speed: state.speed - 200 > 0 ? state.speed - 200 : 10}))}>
-          speed up
+          speed +
         </button>
         <button onClick={() => setOption(state => ({...state, speed: state.speed + 200}))}>
-          speed down
+          speed -
         </button>
       </div>
 

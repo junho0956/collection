@@ -4,8 +4,20 @@ export const navRoutes:NavRouteType[] = [
     title: 'utils',
     children: [
       {
-        path: 'throttle',
-        title: 'throttle'
+        path: 'defer',
+        title: 'defer'
+      },
+      {
+        path: 'date',
+        title: 'date'
+      },
+      {
+        path: 'cookie',
+        title: 'cookie'
+      },
+      {
+        path: 'etc',
+        title: 'etc'
       },
     ]
   },
@@ -13,7 +25,18 @@ export const navRoutes:NavRouteType[] = [
     path: 'hooks',
     title: 'hooks',
     children: [
-
+      {
+        path: 'infiniteScroll',
+        title: 'infiniteScroll'
+      },
+      {
+        path: 'isomorphicLayoutEffect',
+        title: 'isomorphicLayoutEffect'
+      },
+      {
+        path: 'reloadService',
+        title: 'reloadService'
+      },
     ]
   },
   {

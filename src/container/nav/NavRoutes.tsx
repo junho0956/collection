@@ -18,17 +18,17 @@ const Route = ({title}:{title:string}) => {
 }
 
 export default function NavRoutes() {
-  const sortedNavRoutes = useMemo(() => {
-    return navRoutes
-      .sort((a,b) => {
-        if (a.title < b.title) return -1;
-        else if (a.title == b.title) return 0;
-        else return 1;
-      })
-  }, []);
+  // const sortedNavRoutes = useMemo(() => {
+  //   return navRoutes
+  //     .sort((a,b) => {
+  //       if (a.title < b.title) return -1;
+  //       else if (a.title == b.title) return 0;
+  //       else return 1;
+  //     })
+  // }, []);
   return (
     <Wrapper className="navRoutes">
-      {sortedNavRoutes.map((route) => (
+      {navRoutes.map((route) => (
         <li key={route.path}>
           {!route.children ? (
             <LinkRoute url={`/${route.path}`} title={route.title} />

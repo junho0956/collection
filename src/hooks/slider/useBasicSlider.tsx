@@ -75,10 +75,8 @@ export default function useBasicSlider({data, option}:Props) {
   }
 
   useEffect(() => {
-    setAutoSlide(option.auto)
-    return () => {
-      setAutoSlide(false);
-    }
+    setAutoSlide(option.auto);
+    return () => setAutoSlide(false);
   }, [option.auto, seq]);
 
   return {

@@ -17,7 +17,13 @@ import CardPerspective from "../css/CardPerspective";
 import BasicSlide from "../slide/BasicSlide";
 import NextJS from "../nextjs/nextjs";
 import HTTPCache from "../http/cache";
-import Throttle from "../utils/throttle";
+import Defer from "../utils/defer";
+import DateUtils from "../utils/date";
+import Cookie from "../utils/cookie";
+import ETC from "../utils/etc";
+import InfiniteScroll from "../hooks/InfiniteScroll";
+import IsomorphicLayoutEffect from "../hooks/isomorphicLayoutEffect";
+import ReloadService from "../hooks/reloadService";
 
 type Props = {
   navOpen: boolean;
@@ -46,8 +52,14 @@ const Main = (props:Props) => {
         <Route path="/navigation/horizontal/basic" element={<HorizontalNavigation />} />
         <Route path="/navigation/vertical/basic" element={<VerticalNavigation />} />
 
-        <Route path='/utils/throttle' element={<Throttle />} />
+        <Route path='/utils/defer' element={<Defer />} />
+        <Route path='/utils/date' element={<DateUtils />} />
+        <Route path='/utils/cookie' element={<Cookie />} />
+        <Route path='/utils/etc' element={<ETC />} />
 
+        <Route path='/hooks/infiniteScroll' element={<InfiniteScroll />} />
+        <Route path='/hooks/isomorphicLayoutEffect' element={<IsomorphicLayoutEffect />} />
+        <Route path='/hooks/reloadService' element={<ReloadService />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
