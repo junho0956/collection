@@ -53,7 +53,7 @@ export default function NavRoutes() {
 }
 
 const Wrapper = styled.ul`
-  padding: 20px;
+  padding: 0 20px;
   overflow-x: hidden;
   overflow-y: auto;
   
@@ -61,10 +61,10 @@ const Wrapper = styled.ul`
   &::-webkit-scrollbar {
     display: none;
   }
+  -ms-overflow-style: none;
   
   &>li {
     padding: 10px 0;
-    border-top: 1px solid ${SystemColor.third};
     
     &>.child-routes {
       display: flex;
@@ -77,6 +77,9 @@ const Wrapper = styled.ul`
       }
     }
   }
+  &>li:not(:nth-of-type(1)) {
+    border-top: 1px solid ${SystemColor.third};
+  }
   
   a {
     text-decoration: none;
@@ -84,8 +87,8 @@ const Wrapper = styled.ul`
   }
   
   @media ${screens.desktop} {
-    margin-top: 100px;
-    height: calc(100% - 100px);
+    margin-top: 60px;
+    height: calc(100% - 120px);
   }
   @media ${screens.mobile} {
     margin-top: 50px;
