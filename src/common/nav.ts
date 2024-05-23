@@ -44,6 +44,20 @@ export const navRoutes:NavRouteType[] = [
     title: 'next.js 14'
   },
   {
+    path: 'react',
+    title: 'react',
+    children: [
+      {
+        path: '18',
+        title: 'v18'
+      },
+      {
+        path: '19',
+        title: 'v19'
+      }
+    ]
+  },
+  {
     path: 'board',
     title: 'drag & drop'
   },

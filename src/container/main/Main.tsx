@@ -24,6 +24,8 @@ import ETC from "../utils/etc";
 import InfiniteScroll from "../hooks/InfiniteScroll";
 import IsomorphicLayoutEffect from "../hooks/isomorphicLayoutEffect";
 import ReloadService from "../hooks/reloadService";
+import React19 from "../react/react19";
+import React18 from "../react/react18";
 
 type Props = {
   navOpen: boolean;
@@ -36,6 +38,8 @@ const Main = (props:Props) => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nextjs" element={<NextJS />} />
+        <Route path="/react/18" element={<React18 />} />
+        <Route path="/react/19" element={<React19 />} />
         <Route path="/board" element={<Board />}/>
         <Route path="/client-rect" element={<ClientRect />} />
         <Route path="/css/perspective" element={<CardPerspective />} />
